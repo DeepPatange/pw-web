@@ -77,7 +77,9 @@
   .checks .ck svg{width:12px;height:12px}
   .hero-link{display:inline-flex;align-items:center;gap:6px;font-size:14px;font-weight:700;color:var(--blue)}
   .hero-link svg{width:15px;height:15px}
-  .hero-banner-m{display:block;width:230px;max-width:64%;margin:2px auto 18px;border-radius:14px;box-shadow:0 12px 30px rgba(10,77,162,.2)}
+  .hero-top{display:grid;grid-template-columns:1fr 40%;gap:14px;align-items:start;margin-bottom:16px}
+  .hero-top h1{margin-bottom:0;font-size:21px;line-height:1.22}
+  .hero-banner-m{display:block;width:100%;border-radius:12px;box-shadow:0 10px 26px rgba(10,77,162,.2)}
   .hero-art{display:none;justify-content:center}
   .hero-art img{width:100%;max-width:440px;border-radius:16px;box-shadow:0 16px 44px rgba(10,77,162,.22)}
 
@@ -244,6 +246,8 @@
     .hero-grid{grid-template-columns:1.05fr .95fr;gap:40px}
     .lede{font-size:17px}
     .hero-primary{max-width:360px}
+    .hero-top{display:block;margin-bottom:0}
+    .hero-top h1{font-size:46px;line-height:1.15;margin-bottom:14px}
     .hero-banner-m{display:none}
     .hero-art{display:flex}
     .hero-art img{max-width:480px}
@@ -283,8 +287,10 @@
     <div class="hero-grid">
       <div>
         <span class="pill">★ 4.9/5 · Trusted by 3,200+ students</span>
-        <h1>Submit a project that <em>impresses your examiner</em> — and actually understand it.</h1>
-        <img class="hero-banner-m" src="hero-banner.png" width="300" height="300" alt="30+ Project Bundle — complete pack" />
+        <div class="hero-top">
+          <h1>Submit a project that <em>impresses your examiner</em> — and actually understand it.</h1>
+          <img class="hero-banner-m" src="hero-banner.png" width="300" height="300" alt="30+ Project Bundle — complete pack" />
+        </div>
         <p class="lede">A complete bundle of <b>30+ Data Science, Machine Learning, Deep Learning &amp; Full-Stack AI</b> projects — each with source code, an editable report, PPT and viva Q&amp;A. Stop paying ₹5,000+ to project makers. Submit with confidence this week.</p>
         <div class="priceline">
           <span class="now">₹499</span><span class="old">₹2,999</span><span class="off">83% OFF</span>
